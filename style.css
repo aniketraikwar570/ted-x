@@ -1,0 +1,772 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Banner */
+.top-banner {
+    background: #e0e0e0;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.top-banner a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .ted {
+    font-size: 40px;
+    font-weight: bold;
+    color: red;
+}
+
+.logo .tagline {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 12px;
+}
+
+/* Navbar Link Hover Effect */
+.nav-links a {
+    text-decoration: none;
+    color: rgb(179, 158, 158);
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: red;  /* Changes text color to red on hover */
+}
+
+
+.nav-links .membership-btn{
+color: #ddd;
+}
+
+/* Membership Button */
+.membership-btn {
+    background: rgb(219, 13, 13);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.membership-btn:hover {
+    background: rgb(197, 30, 30);
+    color: white !important; 
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* Search Icon */
+.search-icon .button {
+    background: none;
+    border: none;
+    font-size: 20px;  /* Adjust the size */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.search-icon:hover {
+    transform: scale(1.2); /* Slightly enlarges the icon on hover */
+}
+
+.search-icon i {
+    font-size: 24px;  /* Adjust size if needed */
+    color: #333;  /* Change color */
+}
+
+
+/* Featured Section */
+.featured {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.featured-content {
+    width: 60%;
+}
+
+.featured .category {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.featured h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.featured .description {
+    color: #444;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.featured .meta {
+    color: #777;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.featured-video {
+    width: 35%;
+    position: relative;
+}
+
+.featured-video img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.video-time {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: black;
+    color: white;
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* Video Grid */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-card {
+    position: relative;
+    background: white;
+}
+
+.video-card img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.video-card:hover img {
+    transform: scale(1.05);
+}
+
+.video-card .category {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.video-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.video-card .meta {
+    color: #777;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .featured {
+        flex-direction: column;
+    }
+    
+    .featured-content, .featured-video {
+        width: 100%;
+    }
+}
+
+
+ /* HEADER */
+ .discover-header {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.discover-header h1 {
+    font-size: 24px;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.categories button {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+h3{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding-left: 25px;
+}
+span button{
+    background: #222;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.categories button:hover {
+    background: #444;
+}
+
+.see-all {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* SUPPORT MESSAGE */
+.support-message {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: gray;
+}
+
+/* RECOMMENDED SECTION */
+.recommended {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.recommended h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.recommended-content {
+    display: flex;
+    gap: 20px;
+}
+
+.video-card {
+    flex: 2;
+    background: white;
+}
+
+.video-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.video-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: black;
+}
+
+.video-card p {
+    font-size: 14px;
+    color: gray;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.sidebar-item {
+    margin-bottom: 15px;
+}
+
+.sidebar-item h4 {
+    font-size: 14px;
+    color: red;
+}
+
+.sidebar-item p {
+    font-size: 14px;
+    color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .recommended-content {
+        flex-direction: column;
+    }
+
+    .categories {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+}
+
+
+/* News letter  */
+
+.newsletter-container {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  
+}
+
+.news-card {
+
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 180px;
+}
+
+.news-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.news-card .frequency {
+    font-weight: bold;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.news-card h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.news-card p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.news-card button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.news-card button span {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.newsletter-form {
+ 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    width: 300px;
+}
+
+.newsletter-form h2 {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.newsletter-form p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.subscribe-btn {
+    width: 100%;
+    background: grey;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.terms {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.terms a {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* trending tedx  */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card .category {
+    font-size: 14px;
+    color: #f04b4b;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card .details {
+    font-size: 14px;
+    color: #777;
+}
+
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ai section */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ai-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.ai-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.ai-main img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.ai-main h2 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.ai-main p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.ai-secondary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.ai-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.ai-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.ai-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.ai-card p {
+    font-size: 14px;
+    color: #777;
+}
+
+.ted-ed-section img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.ted-ed-section h2 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.ted-ed-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.ted-ed-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.ted-ed-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.ted-ed-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.ted-ed-card p {
+    font-size: 14px;
+    color: #777;
+}
+
+@media screen and (max-width: 768px) {
+    .ai-section {
+        grid-template-columns: 1fr;
+    }
+
+    .ted-ed-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* footer */
+
+.footer {
+    background-color: #121212;
+    color: white;
+    padding: 40px 80px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3, 
+.footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+.footer-section input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.subscribe-btn {
+    width: 100%;
+    background: grey;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.terms {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.terms a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.social-icons img {
+    height: auto;
+    width: 24px;
+    margin-right: 10px;
+}
+
+.app-links img {
+    width: 120px;
+    margin-right: 10px;
+}
+
+.footer-legal {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-legal a {
+    color: #bbb;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.footer-legal a:hover {
+    color: white;
+}
+
+.footer-legal p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #bbb;
+}
